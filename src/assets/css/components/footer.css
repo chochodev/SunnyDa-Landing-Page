@@ -1,0 +1,119 @@
+#footer {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background: var(--surface);
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+#footer .logo_container {
+  width: max-content;
+}
+
+#footer .logo_container .logo_img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* COMPANY LINKS */
+#footer .company_links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#footer .company_links .heading {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  padding: .5rem 0;
+}
+
+#footer .company_links .links {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+#footer .company_links .links .link {
+  font-size: .875rem;
+  font-weight: 600;
+  width: 100%;
+  color: var(--primary-color);
+  padding-bottom: .15rem;
+  line-height: 1.25rem;
+  transition: .2s ease-in-out;
+}
+
+#footer .company_links .links .link:hover {
+  color: #D07C06;
+}
+
+#footer .newsletter_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+#footer .newsletter_container .heading {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  padding: .5rem 0;
+}
+
+#footer .newsletter_container .newsletter_form {
+  display: flex;
+  outline: 2px solid #D07C06;
+  border-radius: 5px;
+  height: 2.25rem;
+  overflow: hidden;
+}
+
+#footer .newsletter_container .newsletter_form .email {
+  width: 100%;
+  height: 100%;
+  padding: .25rem;
+  font-size: .875rem;
+  color: var(--primary-color);
+  background: #16102F;
+}
+
+#footer .newsletter_container .newsletter_form .submit {
+  background: #D07C06;
+  color: var(--primary-color);
+  font-size: .875rem;
+  font-weight: 600;
+  padding: .5rem;
+  transition: .2s ease-in-out;
+}
+
+#footer .newsletter_container .newsletter_form .submit:hover {
+  color: #000000;
+}
+
+.grid_1 {
+  grid-area: a;
+}
+.grid_2 {
+  grid-area: b;
+}
+.grid_3 {
+  grid-area: c;
+}
+.grid_4 {
+  grid-area: d;
+}
+
+@media (max-width: 768px) {
+  #footer {
+    grid-template-columns: none;
+    grid-template-areas: 
+    "a d"
+    "b c";
+    gap: 2rem 15vw;
+  }
+}

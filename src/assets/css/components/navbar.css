@@ -1,0 +1,224 @@
+#navbar {
+  user-select: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 120;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  height: max-content;
+  background: var(--surface);
+  background-blend-mode: color;
+  padding: .875rem 2rem;
+  transition: .1s ease-in-out;
+}
+
+/* LOGO */
+#navbar .logo_container {
+  width: max-content;
+}
+
+#navbar .logo_container .logo_img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* NAVBAR MENU BUTTON */
+#navbar .menu_button {
+  display: none;
+  padding: .25rem .5rem;
+  border-radius: 5px;
+  transition: .2s ease-in-out;
+}
+
+#navbar .menu_button:hover {
+  background: #FCE4A610;
+}
+
+#navbar.section_2 .menu_button:hover {
+  background: #FCE4A660;
+}
+
+#navbar .menu_button .icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+#navbar.section_2 .menu_button .icon {
+  font-size: 2rem;
+  color: var(--primary-color-2);
+}
+
+/* NAVBAR LINKS */
+#navbar .nav_links {
+  display: flex;
+  gap: calc(2.5rem + 1vw);
+  padding-right: 5vw;
+}
+
+/* STYLING OF DEFAULT SECTION */
+#navbar .nav_links .link,
+#navbar .nav_links .cta {
+  text-align: center;
+  min-width: 80px;
+  text-transform: uppercase;
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+  padding: .5rem .75rem;
+  border-radius: 5px;
+  transition: .2s ease-in-out;
+}
+
+#navbar .nav_links .link:hover {
+  background: #FCE4A620;
+}
+
+#navbar .nav_links .link:active {
+  background: #ffffff40;
+}
+
+#navbar .nav_links .cta {
+  font-weight: 700;
+  color: var(--text-dark);
+  background: var(--primary-color);
+  box-shadow: 0 0 5px 2px rgba(252, 228, 166, 0.15);
+}
+
+#navbar .nav_links .cta:hover {
+  color: var(--secondary-color);
+  box-shadow: 0 0 8px 2px rgba(252, 228, 166, 0.5);
+}
+
+#navbar .nav_links .cta:focus {
+  box-shadow: 0 0 2px 2px rgba(252, 228, 166, 0.5);
+}
+
+/* FOR STYLING OF SECTION 2 */
+#navbar.section_2 .nav_links .link {
+  color: var(--primary-color-2);
+  font-weight: 700;
+  transition: .2s ease-in-out;
+}
+#navbar.section_2 .nav_links .link:hover {
+  background: #ffd70040;
+}
+#navbar.section_2 .nav_links .cta {
+  background: #333333;
+  color: #fbe359;
+  box-shadow: 0 0 4px 2px #ffd70020;
+}
+#navbar.section_2 .nav_links .cta:hover {
+  background: #222222;
+  box-shadow: 0 0 7px 2px #55555550;
+}
+
+
+@media (max-width: 768px) {
+  #navbar {
+    padding: .75rem .5rem;
+  }
+
+  #navbar .menu_button {
+    display: block;
+  }
+
+  #navbar .nav_links {
+    display: none;
+  }
+}
+
+
+/* NAVBAR FOR SMALL SCREEN */
+#navbar .small_nav_container {
+  position: absolute;
+  z-index: 100;
+  top: calc(100% + 1rem);
+  right: 10px;
+}
+
+#navbar .small_nav_container.open {
+  transform: translateY('2rem');
+  transition: .25s ease-in-out;
+}
+
+#navbar .small_nav_container .small_nav {
+  position: relative;
+  z-index: 100;
+  background: var(--primary-color);
+  width: 100%;
+  max-width: 20rem;
+  height: 100%;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 25px 2px rgba(252, 228, 166, 0.25);
+}
+
+#navbar .small_nav_container .small_nav .header {
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  gap: .5rem;
+  margin-bottom: 1rem;
+}
+
+#navbar .small_nav_container .small_nav .header .logo_img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+#navbar .small_nav_container .small_nav .links {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  text-align: left;
+  width: 100%;
+}
+
+#navbar .small_nav_container .small_nav .links .link {
+  width: 100%;
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: .5rem 0;
+  color: var(--secondary-color);
+  border-radius: 5px;
+  transition: .2s ease-in-out;
+}
+
+#navbar .small_nav_container .small_nav .links .link:hover {
+  background: rgba(0, 0, 0, 0.1);
+  padding-left: .5rem;
+}
+
+#navbar .small_nav_container .small_nav .links .link:active {
+  color: #c3c3c3;
+}
+
+
+#navbar .small_nav_container .small_nav .links .cta {
+  text-align: center;
+  width: 100%;
+  background: #333333;
+  border-radius: 5px;
+  color: #ffffff;
+  margin-top: 1rem;
+  padding: .75rem .25rem;
+}
+
+/* NAVBAR BACKGROUND */
+.navbar_background {
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}

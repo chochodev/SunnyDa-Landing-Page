@@ -1,0 +1,307 @@
+#home {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 50;
+  background: var(--surface);
+  overflow-x: hidden;
+  padding-top: 3rem;
+}
+
+/* HERO SECTION */
+#home .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #BA16A030 0, var(--surface) 40%);
+}
+
+/* HERO TEXT */
+#home .hero .hero_text {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  width: 100%;
+  max-width: 65rem;
+  padding: 1rem;
+}
+
+/* SECTION 2 -- READY */
+#home .section_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 2rem;
+}
+
+#home .section_2 .heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  width: 100%;
+  padding: .5rem 1rem;
+}
+
+#home .section_2 .info {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  width: 100%;
+  max-width: 55rem;
+  padding: .5rem 1rem;
+}
+
+/* CARDS CONTENT */
+#home .section_2 .cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 3rem 1rem;
+  width: 100%;
+  padding: 1rem .5rem;
+}
+
+#home .section_2 .cards .card {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  min-width: 20rem;
+  outline: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px 2px rgba(34, 34, 34, 0.2);
+  cursor: pointer;
+}
+
+#home .section_2 .cards .card .card_img {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+}
+
+
+/* SECTION 3 -- WHAT ARE WE */
+#home .section_3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  background: radial-gradient(circle at bottom center, #BA16A030 0, var(--surface) 40%);
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+#home .section_3 .heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  width: 100%;
+  margin: 0 2rem;
+  padding: .5rem 1rem;
+}
+
+#home .section_3 .what_are_we_img {
+  width: 100%;
+  max-width: 55rem;
+  height: 100%;
+  max-height: 45rem;
+  object-fit: cover;
+}
+
+#home .section_3 .info {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  width: 100%;
+  max-width: 55rem;
+  padding: .5rem .875rem;
+  padding-top: 2rem;
+}
+
+
+/* FOURTH SECTION -- WHY INVEST WITH US */
+#home .section_4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  background: radial-gradient(circle at top center, #BA16A030 0, var(--surface) 40%);
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+  padding-top: 3rem;
+}
+
+#home .section_4 .heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  width: 100%;
+  margin: 0 2rem;
+  padding: .5rem 1rem;
+}
+
+#home .section_4 .info {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  width: 100%;
+  max-width: 55rem;
+  padding: .5rem 1rem;
+  padding-top: 2rem;
+}
+
+#home .section_4 .why_invest_img {
+  width: 100%;
+  max-width: 45rem;
+  height: 100%;
+  max-height: 40rem;
+  object-fit: cover;
+}
+
+
+/* FIFTH SECTION -- WHAT SETS US APART */
+#home .section_5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  background: radial-gradient(circle at top 70%, #BA16A030 0, var(--surface) 40%);
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+  padding-top: 3rem;
+}
+
+#home .section_5 .heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  width: 100%;
+  margin: 0 2rem;
+  padding: .5rem 1rem;
+}
+
+#home .section_5 .info,
+#home .section_5 .text {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  width: 100%;
+  max-width: 55rem;
+  padding: .5rem 1rem;
+  padding-top: 2rem;
+}
+
+#home .section_5 .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+}
+
+#home .section_5 .cards .card {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  width: 18rem;
+  height: 14rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+  border-radius: 5px;
+  color: var(--primary-color);
+  background: #380853;
+  box-shadow: 0 0 15px 2px #aaaaaa20;
+}
+
+
+/* SIXTH SECTION -- TRANSPARENCY AND ACCOUNTABILITY */
+#home .section_6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  background: radial-gradient(circle at top 70%, #BA16A030 0, var(--surface) 40%);
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+  padding-top: 3rem;
+}
+
+#home .section_6 .heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  width: 100%;
+  margin: 0 2rem;
+  padding: .5rem 1rem;
+  padding-bottom: 2rem;
+}
+
+#home .section_6 .content {
+  background: linear-gradient(rgba(68, 79, 156, .29), rgba(56, 8, 83, .25));
+  max-width: 40rem;
+  padding: 1rem;
+  padding-bottom: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.05);
+}
+
+#home .section_6 .content .info {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  width: 100%;
+  max-width: 55rem;
+  padding: .5rem 1rem;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#home .section_6 .content .get_started_link {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  background: #D07C06;
+  border-radius: 50px;
+  padding: .65rem 2.25rem 1rem;
+  transition: .2s ease-in-out;
+}
+
+#home .section_6 .content .get_started_link:hover {
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, .25);
+}
+
+@media (max-width: 980px) {
+  #home .hero .hero_text {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #home .hero .hero_text {
+    text-align: left;
+    font-size: 2.6rem;
+  }
+
+  #home .section_2 .cards .card {
+    min-width: 18rem;
+  }
+}
+
+@media (max-width: 630px) {
+  #home .section_2 .cards .card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+}
