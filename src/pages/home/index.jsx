@@ -5,27 +5,27 @@ import MainLayout from '../../components/layout';
 const Home = () => {
   const works = [
     {
-      image: './src/assets/images/image1.jpeg',
+      image: '/images/image1.jpeg',
       tags: 'Green・Sustainable・Clean'
     },
     {
-      image: './src/assets/images/image5.jpeg',
+      image: '/images/image5.jpeg',
       tags: 'Green・Sustainable・Clean'
     },
     {
-      image: './src/assets/images/image3.jpeg',
+      image: '/images/image3.jpeg',
       tags: 'Green・Sustainable・Clean'
     },
     {
-      image: './src/assets/images/image4.jpeg',
+      image: '/images/image4.jpeg',
       tags: 'Green・Sustainable・Clean'
     },
     {
-      image: './src/assets/images/image6.jpeg',
+      image: '/images/image6.jpeg',
       tags: 'Green・Sustainable・Clean'
     },
     {
-      image: './src/assets/images/image7.png',
+      image: '/images/image7.png',
       tags: 'Green・Sustainable・Clean'
     },
   ]
@@ -53,7 +53,7 @@ const Home = () => {
         {/* THIRD SECTION -- WHAT ARE WE */}
         <div id='section_3' className="section_3">
           <h2 className="heading">What Are We?</h2>
-          <img src="./src/assets/images/image3.jpeg" alt="what-are-we" className='what_are_we_img' />
+          <img src="/images/image3.jpeg" alt="what-are-we" className='what_are_we_img' />
           <p className="info">Sunnyda Movie Trailers is your gateway to a unique and profitable investment opportunity. We specialize in manufacturing next-generation trailers tailored specifically to meet the demands of the dynamic movie production industry. Our diverse range of trailers includes sought-after hair and makeup units, single and double greenrooms, wardrobe trailers, and offices.</p>
         </div>
 
@@ -61,7 +61,7 @@ const Home = () => {
         <div id='section_4' className="section_4">
           <h2 className="heading">Why Invest with Us?</h2>
           <p className="info">In an era where global studios and production companies are increasingly focused on their environmental, social, and governance (ESG) commitments, Sunnyda Movie Trailers offers a win-win solution. While traditional movie trailers rely on diesel-powered trucks, our innovative trailers can be easily towed by utes, offering superior efficiency and cost-effectiveness. We&apos;ve integrated cutting-edge technologies like solar panels, batteries, and LED lighting, significantly reducing carbon emissions and aligning with eco-friendly and sustainable practices.</p>
-          <img src="./src/assets/images/image7.png" alt="why-invest-image" className='why_invest_img' />
+          <img src="/images/image7.png" alt="why-invest-image" className='why_invest_img' />
         </div>
 
         

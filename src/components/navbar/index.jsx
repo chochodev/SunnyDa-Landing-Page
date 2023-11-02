@@ -19,7 +19,7 @@ const Navbar = () => {
     <>
     <div id='navbar'>
       <div className='logo_container'>
-        <img src='./src/assets/logo.svg' alt='logo' className='logo_img' />
+        <img src='/images/logo.svg' alt='logo' className='logo_img' />
       </div>
       <button className='menu_button' onClick={()=>setOpenNav(!openNav)}>
         {!openNav? <RiMenu4Fill className='icon'/>:
