@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../../assets/css/components/navbar.css';
 import { RiMenu4Fill, RiCloseFill } from 'react-icons/ri';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 
 const Navbar = () => {
@@ -26,23 +26,20 @@ const Navbar = () => {
         <RiCloseFill className='icon'/>}
       </button>
       <nav className="nav_links">
-        <Link to='' className='link'>Home</Link>
-        <Link to='' className='link'>About</Link>
+        <Link to='hero' smooth={true} offset={-100} duration={500} className='link'>Home</Link>
+        <Link to='section_3' smooth={true} offset={-80} duration={500} className='link'>About</Link>
         <Link to='' className='link'>Contact Us</Link>
       </nav>
 
       {openNav && <div className={`small_nav_container ${openNav? 'open':''}`}>
         <div className="small_nav">
-          <div className="header">
+          {/* <div className="header">
             <img src='./src/assets/logo.svg' alt='logo' className='logo_img' />
-            <p className="text">SunnyDa: Leading Sustainable Filmmaking with Innovative Trailers!</p>
-          </div>
+          </div> */}
           <nav className="links">
-            <Link to='' className='link' onClick={()=>setOpenNav(false)}>Blog</Link>
-            <Link to='' className='link' onClick={()=>setOpenNav(false)}>About</Link>
-            <Link to='' className='link' onClick={()=>setOpenNav(false)}>Services</Link>
-            <Link to='' className='link' onClick={()=>setOpenNav(false)}>Contact</Link>
-            <Link to='/click' className='cta' onClick={()=>setOpenNav(false)}>Invest Now &#62;</Link>
+            <Link to='hero' smooth={true} offset={-100} duration={500} className='link' onClick={()=>setOpenNav(false)}>Home</Link>
+            <Link to='section_3' smooth={true} offset={-80} duration={500} className='link' onClick={()=>setOpenNav(false)}>About</Link>
+            <Link to='' className='link' onClick={()=>setOpenNav(false)}>Contact Us</Link>
           </nav>
         </div>
       </div>}

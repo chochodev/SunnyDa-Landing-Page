@@ -1,7 +1,7 @@
 #footer {
   display: grid;
   justify-content: space-evenly;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "a b c d";
   background: var(--surface);
   padding: 2rem 1rem;
   gap: 2rem;

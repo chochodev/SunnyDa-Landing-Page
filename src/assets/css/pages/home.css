@@ -21,12 +21,13 @@
 /* HERO TEXT */
 #home .hero .hero_text {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 600;
   color: var(--primary-color);
   width: 100%;
   max-width: 65rem;
   padding: 1rem;
+  margin-top: -5rem;
 }
 
 /* SECTION 2 -- READY */
@@ -42,6 +43,7 @@
 }
 
 #home .section_2 .heading {
+  font-family: 'Outfit', 'Roboto', 'helvetica';
   font-size: 2rem;
   font-weight: 700;
   color: var(--primary-color);
@@ -100,6 +102,7 @@
 }
 
 #home .section_3 .heading {
+  font-family: 'Outfit', 'Roboto', 'helvetica';
   font-size: 1.75rem;
   font-weight: 700;
   color: var(--primary-color);
@@ -141,6 +144,7 @@
 }
 
 #home .section_4 .heading {
+  font-family: 'Outfit', 'Roboto', 'helvetica';
   font-size: 1.75rem;
   font-weight: 700;
   color: var(--primary-color);
@@ -182,6 +186,7 @@
 }
 
 #home .section_5 .heading {
+  font-family: 'Outfit', 'Roboto', 'helvetica';
   font-size: 1.75rem;
   font-weight: 700;
   color: var(--primary-color);
@@ -219,7 +224,6 @@
   border-radius: 5px;
   color: var(--primary-color);
   background: #380853;
-  box-shadow: 0 0 15px 2px #aaaaaa20;
 }
 
 
@@ -238,6 +242,7 @@
 }
 
 #home .section_6 .heading {
+  font-family: 'Outfit', 'Roboto', 'helvetica';
   font-size: 1.75rem;
   font-weight: 700;
   color: var(--primary-color);
@@ -267,6 +272,7 @@
 }
 
 #home .section_6 .content .get_started_link {
+  font-family: 'Outfit', 'Roboto', 'helvetica';
   font-size: 2rem;
   font-weight: 600;
   color: var(--primary-color);
@@ -288,7 +294,6 @@
 
 @media (max-width: 768px) {
   #home .hero .hero_text {
-    text-align: left;
     font-size: 2.6rem;
   }
 
@@ -304,4 +309,8 @@
 }
 
 @media (max-width: 480px) {
+  #home .hero .hero_text {
+    margin-top: -8rem;
+    font-size: 1.5rem;
+  }
 }
