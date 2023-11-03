@@ -97,6 +97,20 @@ const Home = () => {
           </div>
         </div>
         
+          
+        {/* EMBEDED VIDEOS */}
+        <div className="videos">
+          <h2 className="heading">Trailer Production Offices</h2>
+          <div className="content">
+            {yt_videos.map((yt_video, index) => (
+            <div className="video_container" key={index}>
+              <iframe className='yt_video' src={`${yt_video.video}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <span className="tag">{yt_video.tags}</span>
+            </div>
+            ))}
+          </div>
+        </div>
+        
         
         {/* SIXTH SECTION -- TRANSPARENCY AND ACCOUNTABILITY */}
         <div id='section_6' className="section_6">
@@ -130,20 +144,6 @@ const Home = () => {
               <button className="submit">Send Message</button>
             </form>
           </div>
-        </div>
-          
-        {/* EMBEDED VIDEOS */}
-        <div className="videos">
-          <h2 className="heading">Trailer Production Offices</h2>
-          <div className="content">
-            {yt_videos.map((yt_video, index) => (
-            <div className="video_container" key={index}>
-              <iframe className='yt_video' src={`${yt_video.video}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              <span className="tag">{yt_video.tags}</span>
-            </div>
-            ))}
-          </div>
-          
         </div>
       </div>
     </MainLayout>
