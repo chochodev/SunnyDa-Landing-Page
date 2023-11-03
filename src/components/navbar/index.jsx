@@ -28,7 +28,7 @@ const Navbar = () => {
       <nav className="nav_links">
         <Link to='hero' smooth={true} offset={-100} duration={500} className='link'>Home</Link>
         <Link to='section_3' smooth={true} offset={-80} duration={500} className='link'>About</Link>
-        <Link to='' className='link'>Contact Us</Link>
+        <Link to='section_7' smooth={true} offset={-80} duration={500} className='link'>Contact Us</Link>
       </nav>
 
       {openNav && <div className={`small_nav_container ${openNav? 'open':''}`}>

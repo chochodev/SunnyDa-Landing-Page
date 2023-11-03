@@ -31,6 +31,25 @@ const Home = () => {
     },
   ]
 
+  const yt_videos = [
+    {
+      video: 'https://www.youtube.com/embed/VzIOkUrRFCI?si=qVBWe2bx04kdezNx',
+      tags: 'Hair and makeup'
+    },
+    {
+      video: 'https://www.youtube.com/embed/vhK3BxNeHDw?si=5cM2eydtK_8uGhcH',
+      tags: 'Single Greenroom'
+    },
+    {
+      video: 'https://www.youtube.com/embed/Qa7nDvVFpP0?si=-L6zcnIP7U5Cf1tt',
+      tags: 'Double Greenroom'
+    },
+    {
+      video: 'https://www.youtube.com/embed/TI_uGccFjCA?si=PJxNQ8esHbt65Ukk',
+      tags: 'AD Office'
+    },
+  ]
+
   return (
     <MainLayout>
       <div id='home'>
@@ -110,6 +129,19 @@ const Home = () => {
               <textarea name="message" id="message" className="message" placeholder="Your message"></textarea>
               <button className="submit">Send Message</button>
             </form>
+          </div>
+        </div>
+          
+        {/* EMBEDED VIDEOS */}
+        <div className="videos">
+          <h2 className="heading">Trailer Production Offices</h2>
+          <div className="content">
+            {yt_videos.map((yt_video, index) => (
+            <div className="video_container" key={index}>
+              <iframe className='yt_video' src={`${yt_video.video}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <span className="tag">{yt_video.tags}</span>
+            </div>
+            ))}
           </div>
           
         </div>
