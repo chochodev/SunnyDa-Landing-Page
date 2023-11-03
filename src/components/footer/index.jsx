@@ -2,7 +2,11 @@ import { Link } from 'react-router-dom';
 import '../../assets/css/components/footer.css';
 
 const Footer = () => {
+  const date = new Date();
+  const year = date.getFullYear();
+  
   return (
+    <>
     <div id="footer">
       <div className="logo_container grid_1">
         <img src="/images/logo.svg" alt="logo" className='logo_img' />
@@ -30,6 +34,8 @@ const Footer = () => {
         </div>
       </div>
     </div>
+    <small className="copyright">Copyright &copy; {year} SunnyDay Trailer Coporations. All right reserved.</small>
+    </>
   )
 }
 

@@ -108,6 +108,14 @@
   grid-area: d;
 }
 
+.copyright {
+  text-align: center;
+  font-size: .7rem;
+  background: var(--surface);
+  color: #ffffff;
+  padding: 1rem;
+}
+
 @media (max-width: 768px) {
   #footer {
     grid-template-columns: none;
