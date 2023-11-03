@@ -137,7 +137,7 @@ const Home = () => {
               </div> */}
             </div>
             
-            <form action="#" id="contact_form" className="contact_form">
+            <form action="#" id="contact_form" className="contact_form" onSubmit={(e)=>e.preventDefault()}>
               <input type="text" name="full_name" id="full_name" className="full_name" placeholder='Full name' />
               <input type="email" name="email" id="email" className="email_input" placeholder='Email address' />
               <textarea name="message" id="message" className="message" placeholder="Your message"></textarea>
