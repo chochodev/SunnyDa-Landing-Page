@@ -126,15 +126,15 @@ const Home = () => {
           <h2 className="heading">Contact Us</h2>
           <div className="content">
             <div className="text">
-              <p className="info">Do you have any questions? We are always available and happy to help you, you can contact us with this...</p>
-              <div className="social_links">
+              <p className="info">Do you have any questions? We are always available and happy to help.</p>
+              {/* <div className="social_links">
                 <a href="http://" target="_blank" rel="noopener noreferrer">
                   <RiTwitterFill className='social_icon' />
                 </a>
                 <a href="http://" target="_blank" rel="noopener noreferrer">
                   <RiInstagramFill className='social_icon' />
                 </a>
-              </div>
+              </div> */}
             </div>
             
             <form action="#" id="contact_form" className="contact_form">

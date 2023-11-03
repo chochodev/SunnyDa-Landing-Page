@@ -311,8 +311,10 @@
 
 #home .section_7 .content {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  max-width: 45rem;
 }
 
 #home .section_7 .content .text {
@@ -320,6 +322,7 @@
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
+  padding-top: 0;
 }
 
 #home .section_7 .content .text .info {
