@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import '../../assets/css/pages/home.css';
 import MainLayout from '../../components/layout';
-import { RiInstagramFill, RiTwitterFill } from 'react-icons/ri';
+// import { RiInstagramFill, RiTwitterFill } from 'react-icons/ri';
 
 const Home = () => {
   const works = [
@@ -70,7 +70,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* THIRD SECTION -- WHAT ARE WE */}
+        {/* THIRD SECTION -- WHO ARE WE */}
         <div id='section_3' className="section_3">
           <h2 className="heading">What Are We?</h2>
           <img src="/images/image3.jpeg" alt="what-are-we" className='what_are_we_img' />
