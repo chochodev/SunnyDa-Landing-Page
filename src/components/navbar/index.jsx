@@ -39,7 +39,7 @@ const Navbar = () => {
           <nav className="links">
             <Link to='hero' smooth={true} offset={-100} duration={500} className='link' onClick={()=>setOpenNav(false)}>Home</Link>
             <Link to='section_3' smooth={true} offset={-80} duration={500} className='link' onClick={()=>setOpenNav(false)}>About</Link>
-            <Link to='' className='link' onClick={()=>setOpenNav(false)}>Contact Us</Link>
+            <Link to='section_7' smooth={true} offset={-80} duration={500} className='link' onClick={()=>setOpenNav(false)}>Contact Us</Link>
           </nav>
         </div>
       </div>}
