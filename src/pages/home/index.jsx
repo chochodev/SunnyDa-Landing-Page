@@ -72,7 +72,7 @@ const Home = () => {
 
         {/* THIRD SECTION -- WHO ARE WE */}
         <div id='section_3' className="section_3">
-          <h2 className="heading">What Are We?</h2>
+          <h2 className="heading">Who Are We?</h2>
           <img src="/images/image3.jpeg" alt="what-are-we" className='what_are_we_img' />
           <p className="info">Sunnyda Movie Trailers is your gateway to a unique and profitable investment opportunity. We specialize in manufacturing next-generation trailers tailored specifically to meet the demands of the dynamic movie production industry. Our diverse range of trailers includes sought-after hair and makeup units, single and double greenrooms, wardrobe trailers, and offices.</p>
         </div>
