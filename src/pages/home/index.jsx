@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import '../../assets/css/pages/home.css';
 import MainLayout from '../../components/layout';
+import { RiInstagramFill, RiTwitterFill } from 'react-icons/ri';
 
 const Home = () => {
   const works = [
@@ -85,6 +86,32 @@ const Home = () => {
             <p className="info">Sunnyda Movie Trailers operates with the utmost transparency and accountability. We undergo independent audits to maintain financial integrity and ensure compliance with industry standards. With the movie industry&apos;s rapid growth and new studios proposed on the Gold Coast and in Cairns, the demand for our trailers is expected to be constant and ever-increasing.</p>
             <Link to='' className='get_started_link'>Get Started</Link>
           </div>
+        </div>
+
+        {/* SEVENTH SECTION -- CONTACT FORM */}
+        <div className="section_7" id="section_7">
+          <h2 className="heading">Contact Us</h2>
+          <div className="content">
+            <div className="text">
+              <p className="info">Do you have any questions? We are always available and happy to help you, you can contact us with this...</p>
+              <div className="social_links">
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <RiTwitterFill className='social_icon' />
+                </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <RiInstagramFill className='social_icon' />
+                </a>
+              </div>
+            </div>
+            
+            <form action="#" id="contact_form" className="contact_form">
+              <input type="text" name="full_name" id="full_name" className="full_name" placeholder='Full name' />
+              <input type="email" name="email" id="email" className="email_input" placeholder='Email address' />
+              <textarea name="message" id="message" className="message" placeholder="Your message"></textarea>
+              <button className="submit">Send Message</button>
+            </form>
+          </div>
+          
         </div>
       </div>
     </MainLayout>

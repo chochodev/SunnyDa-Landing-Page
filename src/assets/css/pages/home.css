@@ -14,7 +14,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background: radial-gradient(circle at center, #BA16A030 0, var(--surface) 40%);
 }
 
@@ -26,8 +26,7 @@
   color: var(--primary-color);
   width: 100%;
   max-width: 65rem;
-  padding: 1rem;
-  margin-top: -5rem;
+  padding: 7rem 1rem;
 }
 
 /* SECTION 2 -- READY */
@@ -38,8 +37,7 @@
   text-align: center;
   gap: 1rem;
   width: 100%;
-  min-height: 100vh;
-  padding-top: 2rem;
+  /* min-height: 100vh; */
 }
 
 #home .section_2 .heading {
@@ -97,8 +95,9 @@
   gap: 2rem;
   background: radial-gradient(circle at bottom center, #BA16A030 0, var(--surface) 40%);
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 1rem;
+  padding-top: 5rem;
 }
 
 #home .section_3 .heading {
@@ -108,6 +107,7 @@
   color: var(--primary-color);
   width: 100%;
   margin: 0 2rem;
+  margin-bottom: -2rem;
   padding: .5rem 1rem;
 }
 
@@ -138,7 +138,7 @@
   gap: 2rem;
   background: radial-gradient(circle at top center, #BA16A030 0, var(--surface) 40%);
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 1rem;
   padding-top: 3rem;
 }
@@ -180,7 +180,7 @@
   gap: 2rem;
   background: radial-gradient(circle at top 70%, #BA16A030 0, var(--surface) 40%);
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 1rem;
   padding-top: 3rem;
 }
@@ -236,7 +236,7 @@
   gap: 2rem;
   background: radial-gradient(circle at top 70%, #BA16A030 0, var(--surface) 40%);
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 1rem;
   padding-top: 3rem;
 }
@@ -286,6 +286,121 @@
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, .25);
 }
 
+/* SEVENTH SECTION -- CONTACT FORM */
+#home .section_7 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+#home .section_7 .heading {
+  text-align: center;
+  font-family: 'Outfit', 'Roboto', 'helvetica';
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  width: 100%;
+  margin: 0 2rem;
+  padding: .5rem 1rem;
+  padding-bottom: 2rem;
+}
+
+#home .section_7 .content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#home .section_7 .content .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#home .section_7 .content .text .info {
+  font-size: 1.05rem;
+  color: var(--primary-color);
+  width: 100%;
+  max-width: 55rem;
+}
+
+#home .section_7 .content .text .social_links {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+
+#home .section_7 .content .text .social_links .social_icon {
+  font-size: 2.5rem;
+  color: #cccccc;
+  transition: .2s ease-in-out;
+}
+
+#home .section_7 .content .text .social_links a:hover .social_icon {
+  color: #D07C06;
+}
+
+#home .section_7 .content .contact_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #ffffff10;
+  width: 100%;
+  max-width: 45rem;
+  padding: 1.5rem 1rem;
+  border-radius: 5px;
+}
+
+#home .section_7 .content .contact_form .full_name,
+#home .section_7 .content .contact_form .email_input {
+  width: 100%;
+  background: #ffffff30;
+  color: #dddddd;
+  padding: .5rem 0 .5rem .75rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+#home .section_7 .content .contact_form .message {
+  resize: none;
+  width: 100%;
+  height: 10rem;
+  background: #ffffff30;
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: .75rem;
+}
+
+#home .section_7 .content .contact_form .full_name::placeholder,
+#home .section_7 .content .contact_form .email_input::placeholder,
+#home .section_7 .content .contact_form .message::placeholder {
+  color: #cccccc;
+  font-weight: 400 !important;
+}
+
+#home .section_7 .content .contact_form .submit {
+  width: 100%;
+  line-height: 3rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  background: #D07C06;
+  color: #dddddd;
+  border-radius: 5px;
+  transition: .2s ease-in-out;
+}
+
+#home .section_7 .content .contact_form .submit:hover {
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, .25);
+}
+
 @media (max-width: 980px) {
   #home .hero .hero_text {
     font-size: 3rem;
@@ -299,6 +414,11 @@
 
   #home .section_2 .cards .card {
     min-width: 18rem;
+  }
+
+  #home .section_7 .content {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
 
