@@ -109,11 +109,11 @@
 }
 
 .copyright {
-  text-align: center;
-  font-size: .7rem;
-  background: var(--surface);
-  color: #ffffff;
-  padding: 1rem;
+  font-size: .8rem;
+  background: #ffffff20;
+  color: #cccccc;
+  padding: 1.25rem;
+  padding-left: 8%;
 }
 
 @media (max-width: 768px) {
