@@ -15,7 +15,11 @@ const About = () => {
 
             <div id="section_2" className="section_2">
                 <div className="text_div">
-                    <p className="head">About DesignHub</p>
+                    <div className="head_text">
+                        <p className="before"></p>
+                        <p className="head"><span>About </span> DesignHub</p>
+                        <p className="after"></p>
+                    </div>
                     <p className="heading">Introduction To The Best<br/> <p>Digital Agency</p></p>
                     <p className="info">Sunnyda Movie Trailers is the sole manufacturer of these purpose-built trailers for the Australian movie industry. As a team of Queensland-based film industry professionals, we understand the market intimately and are poised for significant growth and profitability.<br/><br/>Are you ready to be a part of the thrilling world of movies and make a smart investment at the same time? Sunnyda Movie Trailers invites you to join us on an exciting journey into the booming movie industry in Australia.</p>
                     <button className="invest_btn">Invest Now</button>
