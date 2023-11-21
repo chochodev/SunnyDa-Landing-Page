@@ -21,8 +21,8 @@ const About = () => {
                     <button className="invest_btn">Invest Now</button>
                 </div>
                 <div className="images">
-                    <img src="image5.jpeg" alt="sunnyda" className='img' />
-                    <img src="image4.jpeg" alt="sunnyda" className='img _2' />
+                    <img src="./images/image5.jpeg" alt="sunnyda" className='img' />
+                    <img src="./images/image4.jpeg" alt="sunnyda" className='img _2' />
                 </div>
             </div>
         </div>
