@@ -1,29 +1,38 @@
 import React from 'react';
 import MainLayout from '../../components/layout';
+import '../../assets/css/pages/contact.css';
 
 const Contact = () => {
   return (
     <MainLayout>
         <div id="contact">
             <div id="hero" className="hero">
-                <h3 className="text">Welcome To SunnyDa</h3>
                 <h2 className="heading">Your Gateway to Lucrative Cinematic Investments!</h2>
-                <p className="info">Are you ready to be a part of the thrilling world of movies and make a smart investment at the same time? Sunnyda Movie Trailers invites you to join us on an exciting journey into the booming movie industry in Australia.</p>
-                <button className="invest_btn">Invest with Us</button>
             </div>
 
-            <div id="section_2" className="section_2">
-                <div className="text_div">
-                    <p className="head">About DesignHub</p>
-                    <p className="heading">Introduction To The Best<br/> <p>Digital Agency</p></p>
-                    <p className="info">Sunnyda Movie Trailers is the sole manufacturer of these purpose-built trailers for the Australian movie industry. As a team of Queensland-based film industry professionals, we understand the market intimately and are poised for significant growth and profitability.<br/><br/>Are you ready to be a part of the thrilling world of movies and make a smart investment at the same time? Sunnyda Movie Trailers invites you to join us on an exciting journey into the booming movie industry in Australia.</p>
-                    <button className="invest_btn">Invest Now</button>
+            <div className="section_2" id="section_2">
+                <h2 className="heading">Contact Us</h2>
+                <div className="content">
+                    <div className="text">
+                    <p className="info">Do you have any questions? We are always available and happy to help.</p>
+                    {/* <div className="social_links">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <RiTwitterFill className='social_icon' />
+                        </a>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <RiInstagramFill className='social_icon' />
+                        </a>
+                    </div> */}
+                    </div>
+                    
+                    <form action="#" id="contact_form" className="contact_form" onSubmit={(e)=>e.preventDefault()}>
+                    <input type="text" name="full_name" id="full_name" className="full_name" placeholder='Full name' />
+                    <input type="email" name="email" id="email" className="email_input" placeholder='Email address' />
+                    <textarea name="message" id="message" className="message" placeholder="Your message"></textarea>
+                    <button className="submit">Send Message</button>
+                    </form>
                 </div>
-                <div className="images">
-                    <img src="image5.jpeg" alt="sunnyda" className='img' />
-                    <img src="image4.jpeg" alt="sunnyda" className='img _2' />
                 </div>
-            </div>
         </div>
     </MainLayout>
   )

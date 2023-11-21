@@ -1,0 +1,140 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 50;
+    background: var(--surface);
+    overflow-x: hidden;
+    padding-top: 3rem;
+}
+
+/* HERO SECTION */
+#contact .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: max-content;
+    padding: 5rem 1rem;
+}
+
+#contact .hero .heading {
+    font-weight: 600;
+    font-size: 3.75rem;
+    color: #ffffff;
+    width: 100%;
+}
+
+/* CONTACT FORM */
+#contact .section_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    padding-bottom: 5rem;
+}
+
+#contact .section_2 .heading {
+    color: #ffffff;
+}
+  
+#contact .section_2 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 45rem;
+}
+  
+#contact .section_2 .content .text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    padding-top: 0;
+}
+  
+#contact .section_2 .content .text .info {
+    font-size: 1.05rem;
+    color: #ffffff;
+    width: 100%;
+    max-width: 55rem;
+}
+  
+#contact .section_2 .content .text .social_links {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+  
+#contact .section_2 .content .text .social_links .social_icon {
+    font-size: 2.5rem;
+    color: #cccccc;
+    transition: .2s ease-in-out;
+}
+  
+#contact .section_2 .content .text .social_links a:hover .social_icon {
+    color: #D07C06;
+}
+  
+#contact .section_2 .content .contact_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: #ffffff10;
+    width: 100%;
+    max-width: 45rem;
+    padding: 1.5rem 1rem;
+    border-radius: 5px;
+}
+  
+#contact .section_2 .content .contact_form .full_name,
+#contact .section_2 .content .contact_form .email_input {
+    width: 100%;
+    background: #ffffff30;
+    color: #dddddd;
+    padding: .5rem 0 .5rem .75rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+  
+#contact .section_2 .content .contact_form .message {
+    resize: none;
+    width: 100%;
+    height: 10rem;
+    background: #ffffff30;
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: .75rem;
+}
+  
+#contact .section_2 .content .contact_form .full_name::placeholder,
+#contact .section_2 .content .contact_form .email_input::placeholder,
+#contact .section_2 .content .contact_form .message::placeholder {
+    color: #cccccc;
+    font-weight: 400 !important;
+}
+  
+#contact .section_2 .content .contact_form .submit {
+    width: 100%;
+    line-height: 3rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    background: #D07C06;
+    color: #dddddd;
+    border-radius: 5px;
+    transition: .2s ease-in-out;
+}
+  
+#contact .section_2 .content .contact_form .submit:hover {
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, .25);
+}
