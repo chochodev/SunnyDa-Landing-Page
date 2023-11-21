@@ -28,7 +28,8 @@ const Contact = () => {
                     <button className="submit">Send Message</button>
                     </form>
                 </div>
-                </div>
+                <button className="invest_btn">Invest with Us</button>
+            </div>
         </div>
     </MainLayout>
   )

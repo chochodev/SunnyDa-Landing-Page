@@ -118,3 +118,16 @@
 #contact .hero .content .contact_form .submit:hover {
     box-shadow: 0 0 5px 1px rgba(255, 255, 255, .25);
 }
+
+/* INVEST BUTTON */
+#contact .hero .invest_btn {
+    background: #DE8300;
+    color: #ffffff;
+    border-radius: 2px;
+    font-size: 1.15rem;
+    font-family: var(--cta-font);
+    width: 50%;
+    max-width: 20rem;
+    margin: 1rem 0;
+    padding: .65rem 0;
+}

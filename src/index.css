@@ -16,6 +16,7 @@
   --text-white: #ffffe7;
   
   font-family: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --cta-font: 'Outfit', 'Sans serif', helvetica;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
