@@ -4,7 +4,7 @@
     position: relative;
     z-index: 50;
     background: var(--surface);
-    overflow-x: hidden;
+    overflow: hidden;
     padding-top: 3rem;
 }
 
