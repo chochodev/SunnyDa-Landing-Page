@@ -1,0 +1,20 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 50;
+    background: var(--surface);
+    overflow-x: hidden;
+    padding-top: 3rem;
+}
+
+#about .heading {
+    text-align: center;
+    font-family: 'Outfit', 'Roboto', 'helvetica';
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    width: 100%;
+    padding: .5rem 1rem;
+    padding-bottom: 2rem;
+}
