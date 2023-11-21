@@ -6,11 +6,7 @@ const Contact = () => {
   return (
     <MainLayout>
         <div id="contact">
-            <div id="hero" className="hero">
-                <h2 className="heading">Your Gateway to Lucrative Cinematic Investments!</h2>
-            </div>
-
-            <div className="section_2" id="section_2">
+            <div className="hero" id="hero">
                 <h2 className="heading">Contact Us</h2>
                 <div className="content">
                     <div className="text">
