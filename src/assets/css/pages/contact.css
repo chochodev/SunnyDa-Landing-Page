@@ -8,28 +8,8 @@
     padding-top: 3rem;
 }
 
-/* HERO SECTION */
-#contact .hero {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: max-content;
-    padding: 5rem 1rem;
-}
-
-#contact .hero .heading {
-    font-weight: 600;
-    font-size: 3.75rem;
-    color: #ffffff;
-    width: 100%;
-}
-
 /* CONTACT FORM */
-#contact .section_2 {
+#contact .hero {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -40,11 +20,11 @@
     padding-bottom: 5rem;
 }
 
-#contact .section_2 .heading {
+#contact .hero .heading {
     color: #ffffff;
 }
   
-#contact .section_2 .content {
+#contact .hero .content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -52,7 +32,7 @@
     max-width: 45rem;
 }
   
-#contact .section_2 .content .text {
+#contact .hero .content .text {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -60,30 +40,30 @@
     padding-top: 0;
 }
   
-#contact .section_2 .content .text .info {
+#contact .hero .content .text .info {
     font-size: 1.05rem;
     color: #ffffff;
     width: 100%;
     max-width: 55rem;
 }
   
-#contact .section_2 .content .text .social_links {
+#contact .hero .content .text .social_links {
     display: flex;
     gap: 2rem;
     width: 100%;
 }
   
-#contact .section_2 .content .text .social_links .social_icon {
+#contact .hero .content .text .social_links .social_icon {
     font-size: 2.5rem;
     color: #cccccc;
     transition: .2s ease-in-out;
 }
   
-#contact .section_2 .content .text .social_links a:hover .social_icon {
+#contact .hero .content .text .social_links a:hover .social_icon {
     color: #D07C06;
 }
   
-#contact .section_2 .content .contact_form {
+#contact .hero .content .contact_form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -94,8 +74,8 @@
     border-radius: 5px;
 }
   
-#contact .section_2 .content .contact_form .full_name,
-#contact .section_2 .content .contact_form .email_input {
+#contact .hero .content .contact_form .full_name,
+#contact .hero .content .contact_form .email_input {
     width: 100%;
     background: #ffffff30;
     color: #dddddd;
@@ -105,7 +85,7 @@
     border-radius: 5px;
 }
   
-#contact .section_2 .content .contact_form .message {
+#contact .hero .content .contact_form .message {
     resize: none;
     width: 100%;
     height: 10rem;
@@ -117,14 +97,14 @@
     padding: .75rem;
 }
   
-#contact .section_2 .content .contact_form .full_name::placeholder,
-#contact .section_2 .content .contact_form .email_input::placeholder,
-#contact .section_2 .content .contact_form .message::placeholder {
+#contact .hero .content .contact_form .full_name::placeholder,
+#contact .hero .content .contact_form .email_input::placeholder,
+#contact .hero .content .contact_form .message::placeholder {
     color: #cccccc;
     font-weight: 400 !important;
 }
   
-#contact .section_2 .content .contact_form .submit {
+#contact .hero .content .contact_form .submit {
     width: 100%;
     line-height: 3rem;
     font-size: 1.15rem;
@@ -135,6 +115,6 @@
     transition: .2s ease-in-out;
 }
   
-#contact .section_2 .content .contact_form .submit:hover {
+#contact .hero .content .contact_form .submit:hover {
     box-shadow: 0 0 5px 1px rgba(255, 255, 255, .25);
 }
