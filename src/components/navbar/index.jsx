@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../../assets/css/components/navbar.css';
 import { RiMenu4Fill, RiCloseFill } from 'react-icons/ri';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -26,9 +26,9 @@ const Navbar = () => {
         <RiCloseFill className='icon'/>}
       </button>
       <nav className="nav_links">
-        <Link to='hero' smooth={true} offset={-100} duration={500} className='link'>Home</Link>
-        <Link to='section_3' smooth={true} offset={-80} duration={500} className='link'>About</Link>
-        <Link to='section_7' smooth={true} offset={-80} duration={500} className='link'>Contact Us</Link>
+        <Link to='/' className='link'>Home</Link>
+        <Link to='/about' className='link'>About</Link>
+        <Link to='/contact' className='link'>Contact Us</Link>
       </nav>
 
       {openNav && <div className={`small_nav_container ${openNav? 'open':''}`}>
@@ -37,9 +37,9 @@ const Navbar = () => {
             <img src='./src/assets/logo.svg' alt='logo' className='logo_img' />
           </div> */}
           <nav className="links">
-            <Link to='hero' smooth={true} offset={-100} duration={500} className='link' onClick={()=>setOpenNav(false)}>Home</Link>
-            <Link to='section_3' smooth={true} offset={-80} duration={500} className='link' onClick={()=>setOpenNav(false)}>About</Link>
-            <Link to='section_7' smooth={true} offset={-80} duration={500} className='link' onClick={()=>setOpenNav(false)}>Contact Us</Link>
+            <Link to='/' className='link' onClick={()=>setOpenNav(false)}>Home</Link>
+            <Link to='/about' className='link' onClick={()=>setOpenNav(false)}>About</Link>
+            <Link to='/contact' className='link' onClick={()=>setOpenNav(false)}>Contact Us</Link>
           </nav>
         </div>
       </div>}
