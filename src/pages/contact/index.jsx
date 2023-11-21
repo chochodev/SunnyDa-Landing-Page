@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import MainLayout from '../../components/layout';
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <MainLayout>
+        
+    </MainLayout>
   )
 }
 
-export default Contact
+export default Contact;
