@@ -191,7 +191,6 @@
     border-radius: 10px;
 }
 
-
 @media (max-width: 860px) {
     /* #about .heading {
         width: max-content;
@@ -216,7 +215,7 @@
     #about .section_2 .images {
         justify-content: center;
         width: 100%;
-        padding: 0 2rem;
+        padding: 0 4vw;
         height: 100%;
         margin-bottom: 15rem;
     }
@@ -240,5 +239,17 @@
     #about .section_3 .images {
         width: 100%;
         padding: 0 4vw;
+    }
+}
+
+
+@media (max-width: 512px) {
+    
+    #about .section_2 .images .img {
+        width: 100%;
+    }
+    
+    #about .section_2 .images .img._2 {
+        display: none;
     }
 }
