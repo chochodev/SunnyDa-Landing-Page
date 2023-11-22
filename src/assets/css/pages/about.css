@@ -195,8 +195,8 @@
 
 /* BUTTON MOUSE ACTIONS */
 #about button:hover {
-    background: #9e5d02;
-    transition: ;
+    background: #975903 !important;
+    transition: .2s ease-in-out;
 }
 
 @media (max-width: 860px) {
