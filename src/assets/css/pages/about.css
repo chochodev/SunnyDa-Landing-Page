@@ -195,7 +195,7 @@
 
 /* BUTTON MOUSE ACTIONS */
 #about button:hover {
-    background: #975903 !important;
+    box-shadow: 0 0 2px 4px rgba(183, 113, 14, 0.25) !important;
     transition: .2s ease-in-out;
 }
 
