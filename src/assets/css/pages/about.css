@@ -192,11 +192,15 @@
 }
 
 @media (max-width: 860px) {
+    
     #about .hero .info {
         text-align: left;
     }
 
-    #about .hero .invest_btn {}
+    #about .hero .invest_btn {
+        width: 100%;
+        max-width: 100%;
+    }
 
     #about .hero .text {
         font-size: 1.5rem;
