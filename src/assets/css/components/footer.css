@@ -125,3 +125,12 @@
     gap: 2rem 15vw;
   }
 }
+
+@media (max-width: 480px) {
+  #footer {
+    grid-template-areas: 
+    "d d"
+    "a e"
+    "b c";
+  }
+}

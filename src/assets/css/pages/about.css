@@ -21,23 +21,11 @@
     padding: 5rem 1rem;
 }
 
-#about .hero .text {
-    font-weight: 500;
-    font-size: 1.75rem;
-    color: #ffffff;
-    width: 100%;
-}
-
-#about .hero .text p {
-    display: inline;
-    color: var(--primary-color-2);
-}
-
 #about .hero .heading {
     text-align: center;
     font-family: 'Outfit', 'Roboto', 'helvetica';
     font-size: 3.5rem;
-    font-weight: 800;
+    font-weight: 900;
     color: #ffffff;
     width: 100%;
     padding: .5rem 1rem;
@@ -45,7 +33,7 @@
 }
 
 #about .hero .info {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: #ffffff;
     padding: 0 1rem;
     max-width: 40rem;
@@ -55,17 +43,16 @@
     background: #DE8300;
     color: #ffffff;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 100%;
-    max-width: 18rem;
+    max-width: 15rem;
     margin: 1rem 0;
-    padding: .5rem 1.5rem;
+    padding: .75rem 1.75rem;
 }
 
 /* SECTION 2 */
-#about .section_2 {
+#about .section {
     display: flex;
-    width: 100%;
     align-items: start;
     justify-content: center;
     gap: 2rem;
@@ -74,18 +61,34 @@
     padding: 2rem 0;
 }
 
-#about .section_2 .text_div {
+#about .section .text_div {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: start;
-    width: 40%;
-    max-width: 35rem;
+    width: 100%;
+    /* max-width: 55rem; */
     color: #ffffff;
-    padding: 1rem;
+    padding: 1rem 4vw;
 }
 
-#about .section_2 .text_div .heading {
+#about .section .text {
+    font-weight: 500;
+    font-size: 3rem;
+    color: #ffffff;
+    width: 100%;
+}
+
+#about .section .info {
+    font-size: 1.75rem;
+}
+
+#about .section .text p {
+    display: inline;
+    color: var(--primary-color-2);
+}
+
+#about .section .text_div .heading {
     position: relative;
     display: flex;
     align-items: center;
@@ -96,18 +99,18 @@
     margin-top: 1rem;
 }
 
-#about .section_2 .text_div .invest_btn {
+#about .section .text_div .invest_btn {
     background: #DE8300;
     color: #ffffff;
     border-radius: 5px;
-    font-size: 1rem;
-    width: 18rem;
+    font-size: 1.2rem;
+    width: 16rem;
     margin: 1rem 0;
     padding: .5rem 2.5rem;
 }
 
 /* IMAGES */
-#about .section_2 .images {
+/* #about .section .images {
     position: relative;
     display: flex;
     justify-content: end;
@@ -117,65 +120,25 @@
     margin-bottom: 18rem;
 }
 
-#about .section_2 .images .img {
+#about .section .images .img {
     width: 80%;
     height: 20rem;
     object-fit: cover;
     border-radius: 8px;
 }
 
-#about .section_2 .images .img._2 {
+#about .section .images .img._2 {
     position: absolute;
     top: 60%;
     right: 12rem;
     z-index: 2;
     width: 55%;
     height: 20rem;
-}
+} */
 
-/* SECTION 3 */
-#about .section_3 {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: start;
-    justify-content: center;
-    gap: 2rem;
-    width: 100%;
-    padding: 2rem 0;
-}
-
-#about .section_3 .text_div {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 40%;
-    max-width: 30rem;
-    color: #ffffff;
-    padding: 1rem;
-}
-
-#about .section_3 .text_div .heading {
-    position: relative;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: max-content;
-    font-size: 1.75rem;
-    font-weight: 600;
-    margin-top: 1rem;
-}
-
-#about .section_3 .text_div .invest_btn {
-    background: #DE8300;
-    color: #ffffff;
-    border-radius: 5px;
-    font-size: 1rem;
-    width: 18rem;
-    margin: 1rem 0;
-    padding: .5rem 2.5rem;
-}
 
 /* IMAGES */
+/*
 #about .section_3 .images {
     position: relative;
     display: flex;
@@ -185,13 +148,13 @@
     height: 100%;
     padding-top: 2rem;
 }
-
+ 
 #about .section_3 .images .img {
     width: 100%;
     height: 25rem;
     object-fit: cover;
     border-radius: 8px;
-}
+} */
 
 /* BUTTON MOUSE ACTIONS */
 #about button:hover {
@@ -203,13 +166,11 @@
     #about .hero {
         padding: 3rem 5vw;
     }
-
-    #about .hero .heading, #about .hero .info { 
-        padding: 0;
-    }
     
-    #about .hero .info {
-        text-align: left;
+    /* ALL INFOS */
+    #about .info {
+        font-size: .875rem !important;
+        padding: 0 !important;
     }
 
     #about .hero .invest_btn {
@@ -217,30 +178,32 @@
         max-width: 100%;
     }
 
-    #about .hero .text {
-        font-size: 1.5rem;
-    }
-
     #about .hero .heading {
-        font-size: 2.75rem;
+        font-size: 1.35rem;
+        font-weight: 800;
+        padding: 0;
     }
     /* SECTION 2 */
-    #about .section_2 {
+    #about .section {
         flex-direction: column;
         width: 100%;
     }
 
-    #about .section_2 .text_div {
+    #about .section .text_div {
         width: 100%;
         max-width: max-content;
         padding: 0 4vw;
     }
 
-    #about .section_2 .text_div .info {
+    #about .text {
+        font-size: 1.2rem !important;
+    }
+
+    #about .section .text_div .info {
         width: 100%;
     }
 
-    #about .section_2 .images {
+    #about .section .images {
         justify-content: center;
         width: 100%;
         padding: 0 4vw;
@@ -248,7 +211,7 @@
         margin-bottom: 15rem;
     }
 
-    #about .section_2 .images .img {
+    #about .section .images .img {
         width: 70%;
     }
     
@@ -272,16 +235,16 @@
 
 
 @media (max-width: 512px) {
-    #about .section_2 .images {
+    #about .section .images {
         margin-bottom: 2rem;
     }
 
     
-    #about .section_2 .images .img {
+    #about .section .images .img {
         width: 100%;
     }
     
-    #about .section_2 .images .img._2 {
+    #about .section .images .img._2 {
         display: none;
     }
 }
