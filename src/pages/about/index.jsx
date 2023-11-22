@@ -20,8 +20,8 @@ const About = () => {
                     <button className="invest_btn">Invest Now</button>
                 </div>
                 <div className="images">
-                    <img src="./images/image5.jpeg" alt="sunnyda" className='img' />
-                    <img src="./images/image4.jpeg" alt="sunnyda" className='img _2' />
+                    <img src="./images/image5.jpeg" alt="theatre" className='img' />
+                    <img src="./images/image4.jpeg" alt="theatre" className='img _2' />
                 </div>
             </div>
 
@@ -32,7 +32,7 @@ const About = () => {
                     <button className="invest_btn">Invest Now</button>
                 </div>
                 <div className="images">
-                    <img src="./images/image5.jpeg" alt="sunnyda" className='img' />
+                    <img src="./images/image5.jpeg" alt="theatre" className='img' />
                 </div>
             </div>
         </div>
