@@ -121,7 +121,7 @@
     width: 80%;
     height: 20rem;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 #about .section_2 .images .img._2 {
@@ -190,7 +190,7 @@
     width: 100%;
     height: 25rem;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 @media (max-width: 860px) {
