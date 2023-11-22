@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Outfit&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Poppins&display=swap');
+
 :root {
   --surface: #000231;
   --surface-2: #ffffff;
@@ -14,8 +15,7 @@
   --text-dark: #333333;
   --text-light: #feffc1;
   --text-white: #ffffe7;
-  
-  font-family: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
   --cta-font: 'Outfit', 'Sans serif', helvetica;
 
   font-synthesis: none;
@@ -34,13 +34,20 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, a, button {
+  font-family: 'Outfit', sans-serif;
+}
+
+p, span, small, b, i {
+  font-family: 'Poppins', sans-serif;
 }
 
 a, button {

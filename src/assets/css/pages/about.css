@@ -24,8 +24,8 @@
 #about .hero .heading {
     text-align: center;
     font-family: 'Outfit', 'Roboto', 'helvetica';
-    font-size: 3.5rem;
-    font-weight: 900;
+    font-size: 64px;
+    font-weight: 700;
     color: #ffffff;
     width: 100%;
     padding: .5rem 1rem;
@@ -33,7 +33,7 @@
 }
 
 #about .hero .info {
-    font-size: 1.5rem;
+    font-size: 25px;
     color: #ffffff;
     padding: 0 1rem;
     max-width: 40rem;
@@ -43,7 +43,7 @@
     background: #DE8300;
     color: #ffffff;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: 25px;
     width: 100%;
     max-width: 15rem;
     margin: 1rem 0;
@@ -73,17 +73,18 @@
 }
 
 #about .section .text {
-    font-weight: 500;
-    font-size: 3rem;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.55;
     color: #ffffff;
     width: 100%;
 }
 
 #about .section .info {
-    font-size: 1.75rem;
+    font-size: 32px;
 }
 
-#about .section .text p {
+#about .section .text h3 {
     display: inline;
     color: var(--primary-color-2);
 }
@@ -103,7 +104,7 @@
     background: #DE8300;
     color: #ffffff;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: 25px;
     width: 16rem;
     margin: 1rem 0;
     padding: .5rem 2.5rem;
@@ -166,11 +167,12 @@
     #about .hero {
         padding: 3rem 5vw;
     }
-    
+
     /* ALL INFOS */
-    #about .info {
-        font-size: .875rem !important;
-        padding: 0 !important;
+    #about .hero .heading {
+        font-size: 20px;
+        font-weight: 800;
+        padding: 0;
     }
 
     #about .hero .invest_btn {
@@ -178,11 +180,16 @@
         max-width: 100%;
     }
 
-    #about .hero .heading {
-        font-size: 1.35rem;
-        font-weight: 800;
-        padding: 0;
+    #about .hero .info {
+        font-size: 12px;
+        padding: 0 !important;
     }
+
+    #about .invest_btn {
+        font-size: 12px !important;
+        max-width: 12rem !important;
+    }
+
     /* SECTION 2 */
     #about .section {
         flex-direction: column;
@@ -195,14 +202,15 @@
         padding: 0 4vw;
     }
 
-    #about .text {
-        font-size: 1.2rem !important;
+    #about .section .text {
+        font-size: 20px;
     }
 
     #about .section .text_div .info {
         width: 100%;
+        font-size: 12px;
     }
-
+/* 
     #about .section .images {
         justify-content: center;
         width: 100%;
@@ -213,28 +221,27 @@
 
     #about .section .images .img {
         width: 70%;
-    }
+    } */
     
     /* SECTION3  */
-
-    #about .section_3 {
-        flex-direction: column;
-    }
-
-    #about .section_3 .text_div {
-        width: 100%;
-        max-width: max-content;
-        padding: 0 4vw;
-    }
-
+/* 
     #about .section_3 .images {
         width: 100%;
         padding: 0 4vw;
-    }
+    } */
 }
 
-
+/* 
 @media (max-width: 512px) {
+    #about .hero .heading {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    #about .hero .info {
+        font-size: 12px;
+    }
+
     #about .section .images {
         margin-bottom: 2rem;
     }
@@ -247,4 +254,4 @@
     #about .section .images .img._2 {
         display: none;
     }
-}
+} */
