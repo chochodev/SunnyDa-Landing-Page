@@ -193,7 +193,11 @@
 
 @media (max-width: 860px) {
     #about .hero {
-        padding: 3rem 4vw;
+        padding: 3rem 5vw;
+    }
+
+    #about .hero .heading, #about .hero .info { 
+        padding: 0;
     }
     
     #about .hero .info {
