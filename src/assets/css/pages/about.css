@@ -192,7 +192,9 @@
 }
 
 @media (max-width: 860px) {
-    #about .hero {}
+    #about .hero {
+        padding: 3rem 4vw;
+    }
     
     #about .hero .info {
         text-align: left;
