@@ -193,6 +193,12 @@
     border-radius: 8px;
 }
 
+/* BUTTON MOUSE ACTIONS */
+#about button:hover {
+    background: #9e5d02;
+    transition: ;
+}
+
 @media (max-width: 860px) {
     #about .hero {
         padding: 3rem 5vw;
