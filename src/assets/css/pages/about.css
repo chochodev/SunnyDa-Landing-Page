@@ -192,6 +192,7 @@
 }
 
 @media (max-width: 860px) {
+    #about .hero {}
     #about .hero .text {
         font-size: 1.5rem;
     }
